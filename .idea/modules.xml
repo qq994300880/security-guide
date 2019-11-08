@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/customFilter/customFilter.iml" filepath="$PROJECT_DIR$/customFilter/customFilter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joinJDBC/joinJDBC.iml" filepath="$PROJECT_DIR$/joinJDBC/joinJDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security-guide.iml" filepath="$PROJECT_DIR$/security-guide.iml" />
+    </modules>
+  </component>
+</project>

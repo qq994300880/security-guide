@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>暂停服务</title>
+    <!-- Mobile specific metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" th:href="@{/static/css/error/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/static/css/error/main.css}"/>
+    <link rel="stylesheet" th:href="@{/static/css/manager/font-awesome/css/font-awesome.min.css}"/>
+    <link rel="icon" th:href="@{/favicon.ico}">
+</head>
+<body class="error-page">
+<div class="container animated fadeInDown">
+    <h1 class="error-number">503</h1>
+    <h2 class="text-center mb5" th:text="${#dates.format(timestamp,'yyyy-MM-dd HH:mm;ss')}"></h2>
+    <h1 class="text-center mb25"><span>暂停服务</span>...</h1>
+    <div class="text-center mt25">
+        <div class="btn-group">
+            <a href="javascript: history.go(-1)" class="btn btn-default btn-lg">
+                <i class="fa fa-arrow-circle-o-left"></i><span>回退</span>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

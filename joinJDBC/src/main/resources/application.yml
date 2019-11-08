@@ -1,0 +1,35 @@
+server:
+  port: 80
+spring:
+  thymeleaf:
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.103:3306/security?serverTimezone=GMT%2B8&useUnicode=true&charactorEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    #    type: com.zaxxer.hikari.HikariDataSource
+    #建表语句
+  #    initialization-mode: always
+  #    type: com.mysql.cj.jdbc.MysqlConnectionPoolDataSource
+  #    schema: [classpath:sql/user.sql]
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true #开启PUT、DELETE请求
+    favicon: #启用默认的图标
+      enabled: false
+  application:
+    name: guide-join-jdbc
+  #mybatis:
+  #  configuration:
+  #    map-underscore-to-camel-case: true #开启驼峰命名规则
+  #  type-aliases-package: com.yd.security.guide.entity #别名处理器
+  #  repository-locations: classpath:mybatis/repository/*.xml
+  #config-location: #xml配置文件位置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
